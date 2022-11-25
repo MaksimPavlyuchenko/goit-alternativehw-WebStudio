@@ -20,9 +20,10 @@
     text-align: center;
     letter-spacing: 0.03em;
             }   
-.filter-btn:hover{
+.filter-btn:hover, .filter-btn:focus{
     color: var(--main-white-color);
     background-color: var(--active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
             }    
  /* РАБОТЫ (JOBS) */
 .jobs-card{
