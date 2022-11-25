@@ -1,0 +1,83 @@
+/* СЕКЦИЯ HERO (ГЕРОЙ) */
+.section.hero{background-color: #2F303A;}
+.hero.title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color:var(--main-white-color);
+           }
+.hero.btn{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+
+    color:var(--main-white-color);
+    background-color: var(--active-color);
+         }
+/* СЕКЦИЯ PLUS (ПРЕИМУЩЕСТВА) */
+.plus.title{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+            }
+.plus.subtitle{
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+            }
+.plus.text{ 
+    line-height: 1.71;
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--second-color-text)
+            }   
+/* СЕКЦИЯ WORK (РАБОТА) */
+.section.team{background-color: #F5F4FA;}
+.team-card{background-color: var(--other-bcg-color);}
+.title.work{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+            }
+/* СЕКЦИЯ TEAM(КОММАНДА) */
+.title.team{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+            }
+.team-name{
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    
+    letter-spacing: 0.03em;
+            }
+.team-prof{
+    
+    font-size: 16px;
+    line-height: 1.19;
+    
+    letter-spacing: 0.03em;
+    
+    color:var(--second-color-text);
+            }
