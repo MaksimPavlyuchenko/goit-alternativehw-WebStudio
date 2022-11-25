@@ -107,8 +107,7 @@ a      {text-decoration: none;}
       letter-spacing: 0.03em;
       
       color:var(--main-white-color);
-        }
-.footer-address:hover{color: var(--active-color);}        
+        }      
 .footer-contact{
       font-style: normal;
       line-height: 1.71;
