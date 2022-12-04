@@ -1,4 +1,4 @@
-.portfolio{
+.header-portfolio{
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -9,16 +9,23 @@
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-           }
+           }           
  /* ФИЛЬТР (FILTER) */
+.filter-list{
+        margin: 0 0 50px 0;
+} 
 .filter-btn{
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+
+    padding: 6px 22px;
     
-    text-align: center;
     letter-spacing: 0.03em;
+
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: var(--back-btn-color);
             }   
 .filter-btn.current{ 
     cursor: pointer;
@@ -41,14 +48,23 @@
     background-color:var(--other-bcg-color);
     border: 1px solid #EEEEEE;
             }
+.jobs-item{
+    padding: 20px 24px;
+
+    border: 1px solid #EEEEEE;
+           }            
 .jobs-header{
     font-size: 18px;
     line-height: 2;
+
+    margin:0 0 4px 0;
     
     letter-spacing: 0.06em;}    
 .jobs-name{
     font-size: 16px;
     line-height: 1.88;
+    
+    margin: 0;
 
     letter-spacing: 0.03em;
 

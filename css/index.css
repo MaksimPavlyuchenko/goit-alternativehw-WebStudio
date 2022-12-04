@@ -1,23 +1,35 @@
 /* СЕКЦИЯ HERO (ГЕРОЙ) */
-.section.hero{background-color: #2F303A;}
+.section.hero{background-color: #2F303A;
+              text-align: center;
+
+              padding-top: 200px;
+              padding-bottom: 200px;
+             }
 .hero.title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
 
-    text-align: center;
+    margin:0 auto 30px auto;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color:var(--main-white-color);
            }
 .hero.btn{
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    padding: 10px 32px;
 
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    border-color: transparent;
+
 
     color:var(--main-white-color);
     background-color: var(--active-color);
@@ -39,14 +51,16 @@
     clip-path: inset(50%);
     margin: -1px;
             }
-.plus.subtitle{
+.plus-list.subtitle{
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin: 0 0 10px 0;
             }
-.plus.text{ 
+.plus-list.text{ 
     line-height: 1.71;
+    margin: 0;
     
     letter-spacing: 0.03em;
     
@@ -60,6 +74,8 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin: 0 0 50px 0;
             }
 /* СЕКЦИЯ TEAM(КОММАНДА) */
 .title.team{
@@ -67,12 +83,26 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin: 0 0 50px 0;
             }
+.team-card{
+          background-color: var(--main-white-color);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          border-radius: 0px 0px 4px 4px;
+          
+          padding-bottom: 30px;
+          
+          text-align: center;
+
+          }            
 .team-name{
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+
+    margin: 30px 0 10px 0;
     
     letter-spacing: 0.03em;
             }
@@ -80,6 +110,8 @@
     
     font-size: 16px;
     line-height: 1.19;
+
+    margin: 0;
     
     letter-spacing: 0.03em;
     

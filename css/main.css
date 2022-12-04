@@ -53,6 +53,7 @@
       --main-white-color:#FFFFFF;
       --active-color:#2196F3;
       --main-bcg-color:#FFF;
+      --back-btn-color:#F5F4FA;
       }
 
 body  { 
@@ -62,13 +63,28 @@ body  {
 
       color: var(--main-text-color);
       }
-ul    {list-style: none;}      
+ul    {list-style: none;
+       margin: 0;
+       padding: 0;}      
 
 a      {text-decoration: none;}
+img{display: block;}
+.section{padding-top: 94px;
+         padding-bottom:94px;
+        }
+.footer{padding-top: 60px;
+        padding-bottom: 60px;
+       }        
+.container{
+      padding-left: 15px;
+      padding-right:15px;
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+          }       
 /* СЕКЦИЯ HEADER (ШАПКА) */
 .helmet{ background-color: var(--other-bcg-color);}
-.logo{
-      font-family: Raleway,sans-serif;
+.logo{font-family: Raleway,sans-serif;
       font-weight: 700;
       font-size: 26px;
       line-height: 1.19;
@@ -81,6 +97,8 @@ a      {text-decoration: none;}
       font-weight: 500;
       line-height: 1.17;
       letter-spacing: 0.02em;
+      padding-top: 32px;
+      padding-bottom: 32px;
       
       color: #212121;
       }
@@ -101,8 +119,14 @@ a      {text-decoration: none;}
                               }
   /* СЕКЦИЯ FOOTER (ПОДВАЛ) */
 .footer{background-color: #2F303A;}  
-.logo.part-footer{color:var(--main-white-color)}
+.logo.part-footer{color:var(--main-white-color);}
+.address-list:nth-child(2){
+      margin:0 0 9px 0;
+                          }
 .footer-address{
+      display: block;
+      margin: 20px 0 9px 0;
+
       font-style: normal;
       line-height: 1.71;
       
