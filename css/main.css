@@ -54,6 +54,8 @@
       --active-color:#2196F3;
       --main-bcg-color:#FFF;
       --back-btn-color:#F5F4FA;
+      --main-flex-gap:30px;
+      --second-flex-gap:50px;
       }
 
 body  { 
@@ -63,12 +65,15 @@ body  {
 
       color: var(--main-text-color);
       }
-ul    {list-style: none;
-       margin: 0;
-       padding: 0;}      
-
-a      {text-decoration: none;}
-img{display: block;}
+a      {text-decoration: none;
+        color: inherit;}
+img{display: block;
+     max-width: 100%;
+    height: auto;}
+.list   {list-style: none;
+      margin: 0;
+      padding: 0;
+       }      
 .section{padding-top: 94px;
          padding-bottom:94px;
         }
@@ -78,12 +83,17 @@ img{display: block;}
 .container{
       padding-left: 15px;
       padding-right:15px;
-      width: 1200px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
           }       
 /* СЕКЦИЯ HEADER (ШАПКА) */
-.helmet{ background-color: var(--other-bcg-color);}
+.helmet{ background-color: var(--other-bcg-color);
+         border-bottom:1px solid #ECECEC;;}
+.nav{
+      display: flex;
+      align-items: center;
+    }      
 .logo{font-family: Raleway,sans-serif;
       font-weight: 700;
       font-size: 26px;
@@ -92,8 +102,14 @@ img{display: block;}
 
       color: var(--active-color);
      }
-.logo.part{color: var(--main-text-color);}     
-.nav-list.link{
+.logo.part{color: var(--main-text-color);
+           margin-right: 92px;}  
+.nav-list{
+      display: flex;
+      gap:var(--second-flex-gap);
+      margin-right: auto;
+         }  
+.nav-list-item{
       font-weight: 500;
       line-height: 1.17;
       letter-spacing: 0.02em;
@@ -102,10 +118,12 @@ img{display: block;}
       
       color: #212121;
       }
-.link:hover, .link:focus{
+.nav-list-link:hover, .link:focus{
       cursor: pointer;
       color:var(--active-color)}
-.nav-list.link.current{color: var(--active-color);}      
+.nav-list-link.current{color: var(--active-color);} 
+.contact-list{display: flex;
+              gap:var(--second-flex-gap);} 
 .contact{
       font-weight: 500;
       line-height: 1.17;

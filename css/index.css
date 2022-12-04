@@ -51,14 +51,18 @@
     clip-path: inset(50%);
     margin: -1px;
             }
-.plus-list.subtitle{
+.plus-list{
+    display: flex;
+    gap:var(--main-flex-gap);
+}            
+.plus-list-subtitle{
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin: 0 0 10px 0;
             }
-.plus-list.text{ 
+.plus-list-text{ 
     line-height: 1.71;
     margin: 0;
     
@@ -67,8 +71,6 @@
     color: var(--second-color-text)
             }   
 /* СЕКЦИЯ WORK (РАБОТА) */
-.section.team{background-color: #F5F4FA;}
-.team-card{background-color: var(--other-bcg-color);}
 .title.work{
     font-size: 36px;
     line-height: 1.17;
@@ -77,7 +79,12 @@
 
     margin: 0 0 50px 0;
             }
+.work-list{
+    display: flex;
+    gap: var(--main-flex-gap);
+          }            
 /* СЕКЦИЯ TEAM(КОММАНДА) */
+.section.team{background-color: #F5F4FA;}
 .title.team{
     font-size: 36px;
     line-height: 1.17;
@@ -86,6 +93,10 @@
 
     margin: 0 0 50px 0;
             }
+.team-list{
+    display: flex;
+    gap:var(--main-flex-gap);  
+          }            
 .team-card{
           background-color: var(--main-white-color);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

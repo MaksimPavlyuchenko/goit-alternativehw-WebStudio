@@ -12,6 +12,9 @@
            }           
  /* ФИЛЬТР (FILTER) */
 .filter-list{
+        display: flex;
+        justify-content: center;
+        gap:8px;
         margin: 0 0 50px 0;
 } 
 .filter-btn{
@@ -44,14 +47,23 @@
                 0px 2px 2px rgba(0, 0, 0, 0.12);
                }    
  /* РАБОТЫ (JOBS) */
-.jobs-card{
-    background-color:var(--other-bcg-color);
-    border: 1px solid #EEEEEE;
-            }
+ .jobs-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:calc(-1 * var(--main-flex-gap));
+    margin-top: calc(-1* var(--main-flex-gap));
+           }
+ .jobs-card{
+  flex-basis: calc(100% / 3 - var(--main-flex-gap));
+  margin-left: var(--main-flex-gap);
+  margin-top: var(--main-flex-gap);
+ }
 .jobs-item{
     padding: 20px 24px;
 
     border: 1px solid #EEEEEE;
+    border-top-color: transparent;
+    
            }            
 .jobs-header{
     font-size: 18px;
