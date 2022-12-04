@@ -39,6 +39,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
                }         
 /* СЕКЦИЯ PLUS (ПРЕИМУЩЕСТВА) */
+.section.plus{
+    padding-bottom: 0;
+}
 .plus.title{
     position: absolute;
     white-space: nowrap;
