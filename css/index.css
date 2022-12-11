@@ -1,9 +1,16 @@
 /* СЕКЦИЯ HERO (ГЕРОЙ) */
-.section.hero{background-color: #2F303A;
-              text-align: center;
+.section.hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
 
-              padding-top: 200px;
-              padding-bottom: 200px;
+    text-align: center;
+
+    background: rgba(47, 48, 58, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    background-image:url(../images/Img-hero.jpeg);
+
+              
              }
 .hero.title{
     font-weight: 900;
@@ -37,10 +44,20 @@
 .hero.btn:hover, .hero.btn:focus{
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-               }         
+    cursor: pointer;
+               }   
+
 /* СЕКЦИЯ PLUS (ПРЕИМУЩЕСТВА) */
+
 .section.plus{
     padding-bottom: 0;
+}
+.plus-list-thumb{
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color: var(--back-btn-color);
+    border-radius: 4px;
 }
 .plus.title{
     position: absolute;
@@ -73,7 +90,9 @@
     
     color: var(--second-color-text)
             }   
+
 /* СЕКЦИЯ WORK (РАБОТА) */
+
 .title.work{
     font-size: 36px;
     line-height: 1.17;
@@ -86,7 +105,9 @@
     display: flex;
     gap: var(--main-flex-gap);
           }            
+
 /* СЕКЦИЯ TEAM(КОММАНДА) */
+
 .section.team{background-color: #F5F4FA;}
 .title.team{
     font-size: 36px;
@@ -101,13 +122,16 @@
     gap:var(--main-flex-gap);  
           }            
 .team-card{
-          background-color: var(--main-white-color);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);         
+                
+    border-radius: 0px 0px 4px 4px;
           
-          padding-bottom: 30px;
+    padding-bottom: 30px;
           
-          text-align: center;
+    text-align: center;
 
           }            
 .team-name{
@@ -125,9 +149,65 @@
     font-size: 16px;
     line-height: 1.19;
 
-    margin: 0;
+    margin: 0 0 16px 0;
     
     letter-spacing: 0.03em;
     
     color:var(--second-color-text);
             }
+.social-links-list{
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}            
+.social-link{
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+.social-icon{fill:var(--main-icon-color);}
+.social-link:hover, .social-link:focus{
+    background-color: var(--active-color);
+    cursor: pointer;
+}
+.social-link:hover .social-icon, .social-link:focus .social-icon{
+    fill:var(--main-white-color);
+}
+       /* СЕКЦИЯ КЛИЕНТЫ (CLIENTS) */
+
+.clients-header{
+  margin: 0 0 50px 0;    
+
+  font-size: 36px;
+  line-height:calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}       
+.list-clients{
+    display: flex;
+    justify-content: space-between;
+
+}
+.client-link{
+    padding: 16px 32px;
+
+    border: 1px solid var(--main-icon-color);
+    border-radius: 4px;
+}
+.client-icon{
+    fill:var(--main-icon-color);
+}
+.client-link:hover, .client-link:focus{
+    border-color: var(--active-color);
+    cursor: pointer;
+}
+.client-link:hover .client-icon, .client-link:focus .client-icon{
+    fill: var(--active-color);
+    cursor: pointer;
+}
