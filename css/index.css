@@ -199,9 +199,7 @@
 
     border: 1px solid var(--main-icon-color);
     border-radius: 4px;
-}
-.client-icon{
-    fill:var(--main-icon-color);
+    fill: var(--main-icon-color);
 }
 .client-link:hover, .client-link:focus{
     border-color: var(--active-color);
