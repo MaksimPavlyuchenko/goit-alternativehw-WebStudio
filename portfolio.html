@@ -24,36 +24,36 @@
   </head>
   <body>
     <!-- ШАПКА -->
-    <header class="helmet">
+    <header class="header">
       <div class="container">
         <nav class="nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo part">Studio</span></a
+          <a href="./index.html" class="logo logo__right"
+            >Web<span class="logo--part">Studio</span></a
           >
-          <ul class="list nav-list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-link">Студія</a>
+          <ul class="list nav--list">
+            <li class="nav--item">
+              <a href="./index.html" class="nav--link">Студія</a>
             </li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-link current"
+            <li class="nav--item">
+              <a href="./portfolio.html" class="nav--link nav--link__current"
                 >Портфоліо</a
               >
             </li>
-            <li class="nav-list-item">
-              <a href="#" class="nav-list-link">Контакти</a>
+            <li class="nav--item">
+              <a href="#" class="nav--link">Контакти</a>
             </li>
           </ul>
-          <ul class="list contact-list">
-            <li class="contact-list-item">
+          <ul class="list contact--list">
+            <li class="contact--item">
               <a href="mailto:info@devstudio.com" class="contact"
-                ><svg class="contact-envelope" width="16px" height="12px">
+                ><svg class="contact--icon" width="16px" height="12px">
                   <use href="./images/icons.svg#icon-envelope" /></svg
                 ><span>info@devstudio.com</span></a
               >
             </li>
-            <li class="contact-list-item">
+            <li class="contact--item">
               <a href="tel:+380961111111" class="contact">
-                <svg class="contact-phone" width="10" height="16">
+                <svg class="contact--icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone" /></svg
                 >+38 096 111 11 11</a
               >
@@ -63,207 +63,241 @@
       </div>
     </header>
     <main>
-      <section class="section portfolio">
+      <section class="section section-portfolio">
         <div class="container">
-          <h1 class="header-portfolio">Портфоліо</h1>
+          <h1 class="section-portfolio--header">Портфоліо</h1>
           <ul class="list filter-list">
-            <li>
-              <button class="filter-btn current" type="button">Усі</button>
+            <li class="filter--item">
+              <button class="filter-btn filter-btn__current" type="button">
+                Усі
+              </button>
             </li>
-            <li>
+            <li class="filter--item">
               <button class="filter-btn" type="button">Веб-сайти</button>
             </li>
-            <li>
+            <li class="filter--item">
               <button class="filter-btn" type="button">Додатки</button>
             </li>
-            <li>
+            <li class="filter--item">
               <button class="filter-btn" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="filter--item">
               <button class="filter-btn" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="list jobs-list">
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image4.jpg"
-                    alt="Зображення головної сторінки сайту на лептоп"
-                  />
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image4.jpg"
+                      alt="Зображення головної сторінки сайту на лептоп"
+                    />
 
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header">Технокряк</h2>
-                  <p class="jobs-name">Веб-сайт</p>
-                </div>
-              </a>
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header">Технокряк</h2>
+                    <p class="jobs-name">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image5.jpg"
-                    alt="Зображення двох баскетболістів в ігрі"
-                  />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header">
-                    Постер <span lang="en">New Orlean vs Golden Star</span>
-                  </h2>
-                  <p class="jobs-name">Дизайн</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image5.jpg"
+                      alt="Зображення двох баскетболістів в ігрі"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header">
+                      Постер <span lang="en">New Orlean vs Golden Star</span>
+                    </h2>
+                    <p class="jobs-name">Дизайн</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image6.jpg"
-                    alt="Лейбл ресторану з зображенням риби"
-                  />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header">
-                    Ресторан <span lang="en">Seafood</span>
-                  </h2>
-                  <p class="jobs-name">Додаток</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image6.jpg"
+                      alt="Лейбл ресторану з зображенням риби"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header">
+                      Ресторан <span lang="en">Seafood</span>
+                    </h2>
+                    <p class="jobs-name">Додаток</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img src="./images/image7.jpg" alt="Зображення Навушників" />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header">
-                    Проєкт <span lang="en">Prime</span>
-                  </h2>
-                  <p class="jobs-name">Маркетинг</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image7.jpg"
+                      alt="Зображення Навушників"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header">
+                      Проєкт <span lang="en">Prime</span>
+                    </h2>
+                    <p class="jobs-name">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image8.jpg"
-                    alt="Дві картонні коробки з зображеннями"
-                  />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header">
-                    Проєкт <span lang="en">Boxes</span>
-                  </h2>
-                  <p class="jobs-name">Додаток</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image8.jpg"
+                      alt="Дві картонні коробки з зображеннями"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header">
+                      Проєкт <span lang="en">Boxes</span>
+                    </h2>
+                    <p class="jobs-name">Додаток</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image9.jpg"
-                    alt="Моноблок з включеним екраном"
-                  />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header" lang="en">
-                    Inspiration has no Borders
-                  </h2>
-                  <p class="jobs-name">Веб-сайт</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image9.jpg"
+                      alt="Моноблок з включеним екраном"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header" lang="en">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="jobs-name">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image10.jpg"
-                    alt="Розгорнута сторинка журналу жіночого"
-                  />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header">
-                    Видання <span>Limited Edition</span>
-                  </h2>
-                  <p class="jobs-name">Дизайн</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image10.jpg"
+                      alt="Розгорнута сторинка журналу жіночого"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header">
+                      Видання <span>Limited Edition</span>
+                    </h2>
+                    <p class="jobs-name">Дизайн</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image11.jpg"
-                    alt="Зображення лейблу з одягу"
-                  />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header">Проєкт <span lang="en">LAB</span></h2>
-                  <p class="jobs-name">Маркетинг</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image11.jpg"
+                      alt="Зображення лейблу з одягу"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header">
+                      Проєкт <span lang="en">LAB</span>
+                    </h2>
+                    <p class="jobs-name">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
             </li>
-            <li class="jobs-card">
-              <a class="jobs-link">
-                <div class="jobs-thumb">
-                  <img
-                    src="./images/image12.jpg"
-                    alt="Людина працює за леп-топом"
-                  />
-                  <p class="jobs-overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                <div class="jobs-item">
-                  <h2 class="jobs-header" lang="en">Growing Business</h2>
-                  <p class="jobs-name">Додаток</p>
-                </div>
-              </a>
+            <li class="jobs-list--item">
+              <div class="jobs-card">
+                <a class="jobs-link">
+                  <div class="jobs-thumb">
+                    <img
+                      src="./images/image12.jpg"
+                      alt="Людина працює за леп-топом"
+                    />
+                    <p class="jobs-overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="jobs-content">
+                    <h2 class="jobs-header" lang="en">Growing Business</h2>
+                    <p class="jobs-name">Додаток</p>
+                  </div>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -273,13 +307,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-box">
-          <div class="footer-part-one">
+          <div class="footer-box--part-one">
             <a href="./index.html" class="logo"
-              >Web<span class="logo part-footer">Studio</span></a
+              >Web<span class="logo--part__footer">Studio</span></a
             >
             <address>
               <ul class="list address-list">
-                <li class="address-list item">
+                <li class="address-list--item">
                   <a
                     class="footer-address"
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -288,12 +322,12 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="address-list item">
+                <li class="address-list--item">
                   <a class="footer-contact" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="address-list item">
+                <li class="address-list--item">
                   <a class="footer-contact" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
@@ -301,53 +335,81 @@
               </ul>
             </address>
           </div>
-          <div class="footer-part-two">
+          <div class="footer-box--part-two">
             <h2 class="footer-call">приєднуйтесь</h2>
-            <ul class="list footer-links-list">
-              <li class="footer-social-link">
-                <a href="#" aria-label="instagram"
-                  ><svg class="footer-social-icon" width="20" height="20">
+            <ul class="list social-links-list">
+              <li class="links-list--item links-list--item__footer-bc">
+                <a
+                  href="#"
+                  aria-label="instagram"
+                  class="social-link social-link__footer-bc"
+                  ><svg
+                    class="social-icon social-icon__footer-color"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-instagram" /></svg
                 ></a>
               </li>
-              <li class="footer-social-link">
-                <a href="#" aria-label="twitter"
-                  ><svg class="footer-social-icon" width="20" height="20">
+              <li class="links-list--item links-list--item__footer-bc">
+                <a
+                  href="#"
+                  aria-label="twitter"
+                  class="social-link social-link__footer-bc"
+                  ><svg
+                    class="social-icon social-icon__footer-color"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-twitter" /></svg
                 ></a>
               </li>
-              <li class="footer-social-link">
-                <a href="#" aria-label="facebook"
-                  ><svg class="footer-social-icon" width="20" height="20">
+              <li class="links-list--item links-list--item__footer-bc">
+                <a
+                  href="#"
+                  aria-label="facebook"
+                  class="social-link social-link__footer-bc"
+                  ><svg
+                    class="social-icon social-icon__footer-color"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-facebook" /></svg
                 ></a>
               </li>
-              <li class="footer-social-link">
-                <a href="#" aria-label="linkedin"
-                  ><svg class="footer-social-icon" width="20" height="20">
+              <li class="links-list--item links-list--item__footer-bc">
+                <a
+                  href="#"
+                  aria-label="linkedin"
+                  class="social-link social-link__footer-bc"
+                  ><svg
+                    class="social-icon social-icon__footer-color"
+                    width="20"
+                    height="20"
+                  >
                     <use href="./images/icons.svg#icon-linkedin" /></svg
                 ></a>
               </li>
             </ul>
           </div>
-          <div class="footer-part-three">
-            <h2 class="form-header">Підпишіться на розсилку</h2>
-            <div class="footer-form">
-              <form class="footer-form">
-                <input
-                  type="email"
-                  placeholder="E-mail"
-                  class="footer-input"
-                  name="footer-mail"
-                />
-                <button class="footer-btn" type="submit">
-                  <span class="footer-btn-text">Підписатися</span>
-                  <svg class="footer-form-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-send" />
-                  </svg>
-                </button>
-              </form>
-            </div>
+          <div class="footer-box--part-three">
+            <h2 class="footer-form-header">Підпишіться на розсилку</h2>
+            <form class="footer-form">
+              <label for="footer-mail"></label>
+              <input
+                id="footer-mail"
+                type="email"
+                placeholder="E-mail"
+                class="footer-input"
+                name="footer-mail"
+              />
+              <button class="footer-btn" type="submit">
+                <span class="footer-btn--text">Підписатися</span>
+                <svg class="footer-btn--icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send" />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>

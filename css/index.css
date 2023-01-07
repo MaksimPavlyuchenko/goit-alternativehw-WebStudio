@@ -1,5 +1,5 @@
 /* СЕКЦИЯ HERO (ГЕРОЙ) */
-.section.hero{
+.section-hero{
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -12,7 +12,7 @@
 
               
              }
-.hero.title{
+.section-hero--title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -25,7 +25,7 @@
 
     color:var(--main-white-color);
            }
-.hero.btn{
+.section-hero--btn{
     
     font-family: inherit;
     font-weight: 700;
@@ -43,7 +43,7 @@
 
     transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
          }
-.hero.btn:hover, .hero.btn:focus{
+.section-hero--btn:hover, .section-hero--btn:focus{
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -51,17 +51,10 @@
 
 /* СЕКЦИЯ PLUS (ПРЕИМУЩЕСТВА) */
 
-.section.plus{
+.section-plus{
     padding-bottom: 0;
 }
-.plus-list-thumb{
-    margin-bottom: 30px;
-    padding: 25px 100px;
-
-    background-color: var(--back-btn-color);
-    border-radius: 4px;
-}
-.plus.title{
+.section-plus--title{
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -73,18 +66,25 @@
     clip-path: inset(50%);
     margin: -1px;
             }
-.plus-list{
+.section-plus--list{
     display: flex;
     gap:var(--main-flex-gap);
-}            
-.plus-list-subtitle{
+}  
+.plus-list--thumb{
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color: var(--back-btn-color);
+    border-radius: 4px;
+}          
+.plus-list--subtitle{
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin: 0 0 10px 0;
             }
-.plus-list-text{ 
+.plus-list--text{ 
     line-height: 1.71;
     margin: 0;
     
@@ -95,7 +95,7 @@
 
 /* СЕКЦИЯ WORK (РАБОТА) */
 
-.title.work{
+.section-work--title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -103,14 +103,14 @@
 
     margin: 0 0 50px 0;
             }
-.work-list{
+.section-work--list{
     display: flex;
     gap: var(--main-flex-gap);
           }   
-.work-list-item{
+.work-list--item{
     position: relative;
 }                  
-.work-list-area{
+.work-list--area{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -119,7 +119,7 @@
     text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
 }
-.work-list-text{
+.work-list--text{
 
   font-weight: 700;
   font-size: 14px;
@@ -134,8 +134,8 @@
 
 /* СЕКЦИЯ TEAM(КОММАНДА) */
 
-.section.team{background-color: #F5F4FA;}
-.title.team{
+.section-team{background-color: #F5F4FA;}
+.section-team--title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -143,11 +143,11 @@
 
     margin: 0 0 50px 0;
             }
-.team-list{
+.section-team--list{
     display: flex;
     gap:var(--main-flex-gap);  
           }            
-.team-card{
+.personal-card{
     background-color: var(--main-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -160,7 +160,7 @@
     text-align: center;
 
           }            
-.team-name{
+.personal-name{
 
     font-weight: 500;
     font-size: 16px;
@@ -170,7 +170,7 @@
     
     letter-spacing: 0.03em;
             }
-.team-prof{
+.personal-prof{
     
     font-size: 16px;
     line-height: 1.19;
@@ -181,38 +181,10 @@
     
     color:var(--second-color-text);
             }
-.social-links-list{
-    padding: 0 32px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}            
-.social-link{
-    width: 44px;
-    height: 44px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-
-    transition:background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-icon{
-    fill:var(--main-icon-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-}
-.social-link:hover, .social-link:focus{
-    background-color: var(--active-color);
-    cursor: pointer;
-}
-.social-link:hover .social-icon, .social-link:focus .social-icon{
-    fill:var(--main-white-color);
-}
        /* СЕКЦИЯ КЛИЕНТЫ (CLIENTS) */
 
-.clients-header{
+.section-clients--header{
   margin: 0 0 50px 0;    
 
   font-size: 36px;
@@ -220,7 +192,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 }       
-.list-clients{
+.section-clients--list{
     display: flex;
     justify-content: space-between;
 
@@ -282,7 +254,7 @@
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn{
+.modal--close-btn{
     position:absolute;
     top:8px;
     right: 8px;
@@ -301,13 +273,13 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 } 
-.modal-close-btn:hover{
+.modal--close-btn:hover{
     cursor: pointer;
       fill: var(--active-color);
       box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
                   rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.modal-header{
+.modal--header{
     text-align: center;
     margin:0 0 12px 0;
 
@@ -315,7 +287,7 @@
     line-height:1.15;
     letter-spacing: 0.03em;
 }
-.form-label-header{
+.form--label-header{
     display: inline-block;
     margin-bottom: 4px;
 
@@ -326,11 +298,11 @@
     color:var(--second-color-text);
     cursor: pointer;
 }
-.form-box{
+.form--box{
     position: relative;
     margin-bottom: 10px;
 }
-.form-field-input{
+.form--input{
     padding: 11px 12px 11px 42px;
     width: 100%;
     outline: none;
@@ -340,21 +312,22 @@
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field-input:focus{
+.form--input:focus{
     border-color: var(--active-color);
 }
-.form-field-input:focus+.form-icon{
+.form--input:focus+.form--icon{
     fill:var(--active-color)
 }
-.form-icon{
+.form--icon{
     position: absolute;
     left: 12px;
     top:50%;
     transform: translateY(-50%);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
-.form-field-area{
+.form--area{
     width: 100%;
     padding: 12px 16px;
     margin-bottom: 20px;
@@ -369,7 +342,7 @@
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field-area::placeholder{
+.form--area::placeholder{
     
     font-size: 12px;
     line-height:1.16;
@@ -377,17 +350,28 @@
 
     color: rgba(117, 117, 117, 0.5);
 }
-.form-field-area:focus{
+.form--area:focus{
     border-color: var(--active-color);
 }
-.terms-box{
+.form--terms-box{
     display: flex;
     justify-content:center;
     align-items: center;
     margin-bottom: 30px;
 
 }
-.form-checkbox{
+.form-terms{
+    position: relative;
+
+    padding-left: 9px;
+    
+    line-height:1.71;
+    letter-spacing: 0.03em;
+
+    color:var(--second-color-text);
+    cursor: pointer;
+}
+.terms-box--checkbox{
    position: absolute;
 
    width: 1px;
@@ -402,7 +386,7 @@
    
    clip: rect(0 0 0 0);
 }
-.form-checkbox:checked+.custom-checkbox{
+.terms-box--checkbox:checked+.terms-box--custom-checkbox{
     background-color: var(--active-color);
     border-color: transparent;
     background-image: url(../images/icon-check.svg);
@@ -413,7 +397,7 @@
                             rgba(0, 0, 0, 0.2);
     
 }
-.custom-checkbox{
+.terms-box--custom-checkbox{
     position: absolute;
     display:block;
     left:-16px;
@@ -426,18 +410,6 @@
     border: 2px solid var(--main-text-color);
     border-radius: 2px;
 }
-
-.form-terms{
-    position: relative;
-
-    padding-left: 9px;
-    
-    line-height:1.71;
-    letter-spacing: 0.03em;
-
-    color:var(--second-color-text);
-    cursor: pointer;
-}
 .terms-link{
     display: inline-block;
     
@@ -446,7 +418,7 @@
     color: var(--active-color);
     outline: none;
 }
-.submit-btn{
+.form--submit-btn{
     display: block;
     margin: 0 auto;
     padding: 10px 52px;
@@ -467,6 +439,6 @@
     cursor: pointer;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.submit-btn:hover{
+.form--submit-btn:hover{
     background-color: #188CE8;
 }
