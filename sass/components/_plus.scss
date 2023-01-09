@@ -1,0 +1,39 @@
+.section-plus{
+    padding-bottom: 0;
+    &--title{ position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;}
+}
+.plus-list{
+    @extend%listStyle;
+    display: flex;
+    gap:$main-gap;
+    &--thumb{margin-bottom: 30px;
+        padding: 25px 100px;
+    
+        background-color:$back-btn-color;
+        border-radius: 4px;
+    }
+    &--subtitle{
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+                }
+    &--text{line-height: 1.71;
+        margin: 0;
+        
+        letter-spacing: 0.03em;
+        
+        color:$second-text-color;}            
+            }
+
+    
