@@ -18,7 +18,7 @@
      }
      &--link{
         @extend%linkStyle;
-        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition:color 250ms $time-function;
         padding: 32px 0;
      }
      &--link:hover, &--link:focus{
@@ -60,7 +60,7 @@
         color:$second-text-color;
         fill: $second-text-color;
 
-        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition:color 250ms $time-function;
             }
             &--link:hover{
                 cursor: pointer;

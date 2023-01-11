@@ -12,6 +12,33 @@ img {
   height: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-portfolio--header, .section-plus--title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .filter-list, .modal-form--terms-box, .modal--close-btn, .footer-btn, .footer-form, .team-list, .social-links-list, .work-list, .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,19 +62,6 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .logo {
@@ -147,6 +161,7 @@ img {
 .section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
   text-align: center;
   background: rgba(47, 48, 58, 0.4);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -187,20 +202,6 @@ img {
 .section-plus {
   padding-bottom: 0;
 }
-.section-plus--title {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
 .plus-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,20 +719,6 @@ img {
 }
 .modal-form--submit-btn:hover {
   background-color: #188CE8;
-}
-
-.section-portfolio--header {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
 }
 
 /* ФИЛЬТР (FILTER) */

@@ -1,4 +1,11 @@
+        // UTILS//
+
 @import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+      // COMPONENTS//
+
 @import './components/logo';
 @import './components/header';
 @import './components/hero';
