@@ -1,25 +1,25 @@
 .section-plus{
     padding-bottom: 0;
-    &--title{@extend%hidden;}
+    &__title{@extend%hidden;}
 }
 .plus-list{
     @extend%listStyle;
     display: flex;
     gap:$main-gap;
-    &--thumb{margin-bottom: 30px;
+    &__thumb{margin-bottom: 30px;
         padding: 25px 100px;
     
         background-color:$back-btn-color;
         border-radius: 4px;
     }
-    &--subtitle{
+    &__subtitle{
         font-weight: 700;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin: 0 0 10px 0;
                 }
-    &--text{line-height: 1.71;
+    &__text{line-height: 1.71;
         margin: 0;
         
         letter-spacing: 0.03em;

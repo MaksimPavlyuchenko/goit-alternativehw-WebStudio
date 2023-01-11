@@ -31,7 +31,7 @@
     background-color: $main-white-color;
 
     transition: transform 250ms $time-function;
-    &--close-btn{
+    &__close-btn{
         position:absolute;
         top:8px;
         right: 8px;
@@ -47,12 +47,12 @@
         background-color:$main-white-color;
     
         transition: fill 250ms $time-function;}
-        &--close-btn:hover{
+        &__close-btn:hover{
             cursor: pointer;
             fill: $active-color;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
                         rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;}
-    &--header{
+    &__header{
         text-align: center;
         margin:0 0 12px 0;
     
@@ -61,7 +61,7 @@
         letter-spacing: 0.03em;}                    
 }
 .modal-form{
-    &--label{
+    &__label{
         display: inline-block;
         margin-bottom: 4px;
     
@@ -71,10 +71,10 @@
     
         color:$second-text-color;
         cursor: pointer;}
-    &--box{
+    &__box{
         position: relative;
         margin-bottom: 10px;}  
-    &--input{ 
+    &__input{ 
         padding: 11px 12px 11px 42px;
         width: 100%;
         outline: none;
@@ -83,8 +83,8 @@
         cursor: pointer;
     
         transition: border 250ms $time-function;} 
-    &--input:focus{border-color:$active-color;}
-    &--icon{
+    &__input:focus{border-color:$active-color;}
+    &__icon{
         position: absolute;
         left: 12px;
         top:50%;
@@ -92,8 +92,8 @@
     
         transition: fill 250ms $time-function;
         cursor: pointer;}
-    &--input:focus+&--icon{ fill:$active-color;}
-    &--area{
+    &__input:focus+&__icon{ fill:$active-color;}
+    &__area{
         width: 100%;
         padding: 12px 16px;
         margin-bottom: 20px;
@@ -107,18 +107,18 @@
         outline: none;
     
         transition: border 250ms $time-function;}
-    &--area::placeholder{
+    &__area::placeholder{
         font-size: 12px;
         line-height:1.16;
         letter-spacing: 0.01em;
     
         color: rgba(117, 117, 117, 0.5);} 
-    &--area:focus{border-color:$active-color;}
-    &--terms-box{
+    &__area:focus{border-color:$active-color;}
+    &__terms-box{
         @extend%flexCenter;
         
         margin-bottom: 30px;}
-    &--terms{
+    &__terms{
         position: relative;
 
         padding-left: 9px;
@@ -128,7 +128,7 @@
     
         color:$second-text-color;
         cursor: pointer;} 
-    &--checkbox{ 
+    &__checkbox{ 
         position: absolute;
 
         width: 1px;
@@ -142,7 +142,7 @@
         border:0;
         
         clip: rect(0 0 0 0);}     
-    &--checkbox:checked+&--custom-checkbox{ 
+    &__checkbox:checked+&__custom-checkbox{ 
         background-color:$active-color;
         border-color: transparent;
         background-image: url(../images/icon-check.svg);
@@ -151,7 +151,7 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px 
                                 rgba(0, 0, 0, 0.14), 0px 2px 1px
                                 rgba(0, 0, 0, 0.2);}
-    &--custom-checkbox{
+    &__custom-checkbox{
         position: absolute;
         display:block;
         left:-16px;
@@ -163,14 +163,14 @@
     
         border: 2px solid $main-text-color;
         border-radius: 2px;} 
-    &--link{
+    &__link{
         display: inline-block;
     
         text-decoration-line: underline;
      
         color:$active-color;
         outline: none;}  
-    &--submit-btn{
+    &__submit-btn{
         display: block;
         margin: 0 auto;
         padding: 10px 52px;
@@ -190,6 +190,6 @@
     
         cursor: pointer;
         transition: background 250ms $time-function;} 
-    &--submit-btn:hover{background-color: #188CE8;}     
+    &__submit-btn:hover{background-color: #188CE8;}     
 }         
 

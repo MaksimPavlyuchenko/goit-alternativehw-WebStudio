@@ -1,4 +1,4 @@
-.section-work--title{
+.section-work__title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -10,8 +10,8 @@
     @extend%listStyle;
     @extend%flexCenter;
     gap:$main-gap;
-    &--item{position: relative;}
-    &--area{
+    &__item{position: relative;}
+    &__area{
         position: absolute;
         bottom: 0;
         width: 100%;
@@ -19,7 +19,7 @@
     
         text-align: center;
         background-color: rgba(47, 48, 58, 0.8);}
-    &--text{
+    &__text{
         font-weight: 700;
         font-size: 14px;
         line-height:calc(16/14);

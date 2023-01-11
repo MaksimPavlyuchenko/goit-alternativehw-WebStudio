@@ -10,26 +10,26 @@
  gap:$second-gap;
  margin-right: auto;
     
-     &--item{
+     &__item{
         font-weight: 500;
         line-height: 1.17;
         letter-spacing: 0.02em;
         color:$main-text-color;
      }
-     &--link{
+     &__link{
         @extend%linkStyle;
         transition:color 250ms $time-function;
         padding: 32px 0;
      }
-     &--link:hover, &--link:focus{
+     &__link:hover, &__link:focus{
         cursor: pointer;
         color:$active-color;
      }
-     &--link__current{
+     &__link--current{
         position: relative;
         color:$active-color;
      }
-     &--link__current::after{
+     &__link--current::after{
         content: "";
         position: absolute;
         bottom: -1px;
@@ -47,7 +47,7 @@
  display: flex;
  align-items: center;
  gap: 30px;
-     &--link{
+     &__link{
         @extend%linkStyle;
         display: flex;
         align-items:center;
@@ -62,7 +62,7 @@
 
         transition:color 250ms $time-function;
             }
-            &--link:hover{
+            &__link:hover{
                 cursor: pointer;
                 color: $active-color; 
                 fill: $active-color;    

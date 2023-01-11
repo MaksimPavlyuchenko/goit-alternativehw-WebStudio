@@ -19,12 +19,12 @@
         background-color:$active-color;
         cursor: pointer;}
     &:hover .social-icon, &:focus .social-icon{fill:$main-white-color;}    
-    &__footer-bc{ background-color: rgba(255, 255, 255, 0.1);} 
+    &--footer-bc{ background-color: rgba(255, 255, 255, 0.1);} 
        
 }
 .social-icon{
     fill:$main-icon-color;
     transition: fill 250ms $time-function;
-    &__footer-color{fill:$main-white-color;} 
+    &--footer-color{fill:$main-white-color;} 
 }
 

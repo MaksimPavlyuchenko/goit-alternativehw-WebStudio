@@ -14,7 +14,7 @@
 .address-list{
       @extend%listStyle;
       &:nth-child(2){ margin:0 0 9px 0;}
-      &--point{
+      &__point{
             @extend%linkStyle;
             display: block;
             margin: 20px 0 9px 0;
@@ -25,7 +25,7 @@
             letter-spacing: 0.03em;
             
             color:$main-white-color;}
-      &--contact{
+      &__contact{
             @extend%linkStyle;
             font-style: normal;
             line-height: 1.71;
@@ -35,7 +35,7 @@
             color: rgba(255, 255, 255, 0.6);
       
             transition: color 250ms $time-function;}
-      &--contact:hover, &--contact:focus{
+      &__contact:hover, &__contact:focus{
             cursor: pointer;
             color:$active-color;}
         }      
@@ -55,7 +55,7 @@ color:$main-white-color;
 
 .footer-form{
       @extend%flexCenter;
-      &--header{
+      &__header{
             margin-bottom: 20px;
     
             font-size: 14px;
@@ -95,7 +95,7 @@ color:$main-white-color;
       background-color:$active-color;
       border-radius: 4px;
       border-color: transparent;
-      &--text{
+      &__text{
             margin-right: 10px;
       
             font-weight: 700;
@@ -104,7 +104,7 @@ color:$main-white-color;
             letter-spacing: 0.06em;
       
             color:$main-white-color;}
-      &--icon{fill: $main-white-color;}      
+      &__icon{fill: $main-white-color;}      
 }
 
 

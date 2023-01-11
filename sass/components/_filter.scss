@@ -1,4 +1,4 @@
-.section-portfolio--header{
+.section-portfolio__header{
     @extend%hidden;
            }   
 
@@ -10,7 +10,7 @@
         
         gap:8px;
         margin: 0 0 50px 0;
-    &--btn{
+    &__btn{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
@@ -26,14 +26,14 @@
         border-color: transparent;
         border-radius: 4px;
         background-color:$back-btn-color;} 
-    &--btn__current{
+    &__btn--current{
         cursor: pointer;
         color:$main-white-color;
         background-color:$active-color;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
                     0px 1px 2px rgba(0, 0, 0, 0.08), 
                     0px 2px 2px rgba(0, 0, 0, 0.12);}  
-    &--btn:hover, &--btn:focus{
+    &__btn:hover, &__btn:focus{
         cursor: pointer;
         color:$main-white-color;
         background-color:$active-color;
